@@ -123,5 +123,9 @@ fireBullet = angle => {
 When shooting by pressing right-click, the bullets will be auto-aimed towards the opponent closest to your cursor, and within a 90 degree radius. Does not work with snipers. To stop enter `fireBullet = oldFireBullet`.
 
 ```js
-$("head").append('<script scr="https://github.com/CLS-Ghost350/blocktanks-hacks/blob/master/hacks.js"></script>')
+script = document.createElement("SCRIPT")
+att = document.createAttribute("scr")
+att.value = "https://github.com/CLS-Ghost350/blocktanks-hacks/blob/master/hacks.js"
+script.setAttributeNode(att)
+document.head.appendChild(script)
 ```
