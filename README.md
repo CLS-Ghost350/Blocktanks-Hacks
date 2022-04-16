@@ -124,7 +124,7 @@ When shooting by pressing right-click, the bullets will be auto-aimed towards th
 
 ```js
 script = document.createElement("SCRIPT")
-att = document.createAttribute("scr")
+att = document.createAttribute("src")
 att.value = "https://github.com/CLS-Ghost350/blocktanks-hacks/blob/master/hacks.js"
 script.setAttributeNode(att)
 document.head.appendChild(script)
