@@ -1,6 +1,8 @@
 # Blocktanks "Hacks":
 To run these "hacks", press <kbd>CMD</kbd>/<kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>I</kbd> to open the debug console, paste the hack in, and press <kbd>ENTER</kbd>.
 
+### 2025 Update: Added an automatic dodging script made in 2020 (does not work anymore)
+
 ## Auto-Shoot "Hack":
 ```js
 autoShoot = setInterval(() => { if (!controls.rightClick) socket.send("bullet",{ 
@@ -121,11 +123,3 @@ fireBullet = angle => {
 ```
 
 When shooting by pressing right-click, the bullets will be auto-aimed towards the opponent closest to your cursor, and within a 90 degree radius. Does not work with snipers. To stop enter `fireBullet = oldFireBullet`.
-
-```js
-script = document.createElement("SCRIPT")
-att = document.createAttribute("src")
-att.value = "https://github.com/CLS-Ghost350/blocktanks-hacks/blob/master/hacks.js"
-script.setAttributeNode(att)
-document.head.appendChild(script)
-```
